@@ -10,9 +10,9 @@ public class GarageDoorDriver {
 		// Nothing to initialize
 	}
 	public void openDoor(int speedLevel){
-		log.info("Garage Door Opening at " + speedLevel + "speed");
+		log.info("Garage Door Opening at " + speedLevel + " speed");
 	}
 	public void closeDoor(int speedLevel){
-		log.info("Garage Door Closing " + speedLevel + "speed");
+		log.info("Garage Door Closing " + speedLevel + " speed");
 	}
 }

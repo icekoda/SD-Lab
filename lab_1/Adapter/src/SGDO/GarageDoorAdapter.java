@@ -2,17 +2,19 @@ package SGDO;
 
 public class GarageDoorAdapter implements StdGarageDoorOpener {
 
-    private BasicGarageDoor doorOpener;
+    private PremiumGarageDoorOpener doorOpener;
 
-    public GarageDoorAdapter(BasicGarageDoor doorOpener) {
+    private int doorSpeed = 10;
+
+    public GarageDoorAdapter(PremiumGarageDoorOpener doorOpener) {
         this.doorOpener = doorOpener;
     }
 
     public void openDoor() {
-        doorOpener.openDoor();
+        doorOpener.openDoor(doorSpeed);
     }
 
     public void closeDoor() {
-        doorOpener.closeDoor();
+        doorOpener.closeDoor(doorSpeed);
     }
 }

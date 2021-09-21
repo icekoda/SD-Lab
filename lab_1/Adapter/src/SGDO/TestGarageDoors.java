@@ -3,8 +3,8 @@ package SGDO;
 public class TestGarageDoors {
 
     public static void main(String[] args) {
-        BasicGarageDoor standardDoor = new BasicGarageDoor();
-        StdGarageDoorOpener adapter = new GarageDoorAdapter(standardDoor);
+        PremiumGarageDoorOpener premiumDoor = new PremiumGarageDoorOpener();
+        StdGarageDoorOpener adapter = new GarageDoorAdapter(premiumDoor);
 
         adapter.closeDoor();
         adapter.openDoor();

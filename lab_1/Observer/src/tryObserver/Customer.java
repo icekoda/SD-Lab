@@ -26,4 +26,9 @@ public class Customer extends Observer {
     public void unregister(Store storeName) {
         storeName.unregister(this);
     }
+
+    public String toString() {
+        return name;
+    }
+
 }
