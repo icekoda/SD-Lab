@@ -8,8 +8,8 @@ public class Customer extends Observer {
 
 
     public Customer(Store storeName, String name) {
-        this.discount = this.favStore.discount;
         this.favStore = storeName;
+        this.discount = this.favStore.discount;
         this.name = name;
     }
 
